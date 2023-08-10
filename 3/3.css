@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "375font";
+  src: url(375font.otf);
+}
+
+@font-face {
+  font-family: "206font";
+  src: url(206font.ttf);
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Ширина вертикальной полосы */
+  color: aqua;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #b407078a;
+}
+
+/* Для ползунка (сама полоса прокрутки) */
+::-webkit-scrollbar-thumb {
+  background-color: #afadad;
+  border-radius: 20px;
+}
+
+/* При наведении на ползунок */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #383838;
+}
+
+body{
+  background-image: url(images/stikery-naruto-manga.png);
+  background-size: cover;
+}
+
+button{
+  font-family: "206font";
+  font-size: 25px;
+  width: 105px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+#hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+#chat{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+    height: 400px;
+    background-color: orange;
+    border-radius: 15px;
+    border: 5px solid gold;
+}
+
+#conteiner{
+  margin-top: 10px;
+    width: 500px;
+    height: 300px;
+    border: 5px solid red;
+    border-radius: 15px;
+    background-color: rgb(241, 149, 149);
+    overflow: auto;
+  }
+
+  .textMessageCont{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .align-left{
+    justify-content: flex-start;
+  }
+
+  .align-right{
+    justify-content: flex-end;
+  }
+  
+  .textMessage{
+    background-color: rgb(209, 206, 206);
+    font-family: "375font";
+    font-size: 14px;
+    width: fit-content;
+    padding: 5px 10px;
+    border: 3px solid black;
+    border-radius: 7px;
+    margin: 3px 3px 3px 3px;
+    overflow: hidden;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  #sendMessageConteiner{
+    display: flex;
+  }
+
+  #message{
+    background-color: #cdc3c3;
+    border-radius: 5px;
+    font-size: 18px;
+      width: 330px;
+      height: 35px;
+  }
+
+  #message:focus{
+    background-color: white;
+  }
+
+  #geolocation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    font-size: 18px;
+  }
+
+  .geolocation{
+    width: fit-content;
+    background-color: rgb(209, 206, 206);
+    border: 3px solid black;
+    border-radius: 7px;
+    margin: 3px 3px 3px auto; /* Автоматический отступ слева */
+    display: flex;
+    justify-content: flex-end;
+    font-family: "375font";
+    font-size: 10px;
+    overflow: hidden;
+    white-space: normal;
+    word-wrap: break-word;
+  }  
